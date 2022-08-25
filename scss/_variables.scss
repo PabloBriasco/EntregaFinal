@@ -1,0 +1,96 @@
+// Colores
+
+$coloresTexto: (
+    links: red,
+    carrousel: blue,
+    nombrePag: black,
+    verde: forestgreen
+);
+
+@each $texto, $color in $coloresTexto {
+    .colorTexto--#{$texto}{
+        color: $color;
+    }    
+}
+
+$fondoNomPag: #14B2F8;
+$backgroundWS: whitesmoke;
+$bordeNomPag: 2px #C78F95;
+$colorBlanco: white;
+$colorFondo: rgb(242,241,247);
+$colorNegro: black;
+$colorHoverNav: rgb(20, 200, 220);
+$backgroundTitulo: rgb(168, 218, 218);
+$bordeTitulo: orangered;
+$backgroundFooter: royalblue;
+$colorNaranja: orange;
+$bordeMarina: powderblue;
+$gradienteContactoVert: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,32,121,1) 35%, rgba(0,212,255,1) 100%);
+$gradienteContactoHor: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,32,121,1) 35%, rgba(0,212,255,1) 100%);
+$gradienteFondo: linear-gradient(180deg, rgba(242,241,247,1) 12%, rgba(0,212,255,1) 100%, rgba(9,121,112,1) 100%);
+
+// Familias de fuente
+
+$fuenteBasker: 'Rubik', sans-serif;
+$fuentePlay: 'DM Sans', sans-serif;
+
+
+// Tamaños de fuente
+
+$fuenteMasChica: smaller;
+$fuentechica: small;
+$fuenteMedia: medium;
+$fuenteGrande: larger;
+$fuente600: 600%;
+$fuente300: 300%;
+$fuente200: 200%;
+$fuente100: 100%;
+$fuente75: 75%;
+$fuente15: 15px;
+$fuente12: 12px;
+$fuente20: 20px;
+$fuente10: 10px;
+
+// Estilos de fuente
+
+$fuenteItalic: italic;
+
+// Grosores de fuente
+
+$grosorNegrita: bolder;
+$grosor600: 600;
+
+// Opacidad
+
+$opac100: 100%;
+$opac90: 90%;
+$opac80: 80%;
+
+// Bordes
+
+// Anchos
+
+$anchoBorde1 : 10px;
+$anchoBorde2: $anchoBorde1/2;
+
+// Radios de borde
+
+$radio10: 10px;
+$radio20: 20px;
+
+
+// Banner
+
+$anchoBanner: 100%;
+$altoBanner: 300px;
+$animacTime: 2s;
+
+// Nav
+$margenNav: 5px 0;
+$paddingNavLi: 10px 20px;
+
+// Wrappers
+
+$paddingWrapper: 0 2%;
+$gapWrapper: 10px 30px;
+$marginWrapper: 0 auto 0;

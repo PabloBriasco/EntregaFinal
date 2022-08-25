@@ -1,0 +1,29 @@
+// Estilos de la página "Marina"
+
+#listaRangos { 
+    @include textos ($radio20, none, $backgroundWS, $bordeMarina);    
+    border-style: double;    
+    border-width: $anchoBorde1;    
+}
+
+#marines {
+    @include textos ($radio20, 10% 8%, $backgroundWS, $bordeMarina);     
+    border-style: double;    
+    border-width: $anchoBorde1;    
+}
+
+#rangosMarine {    
+    width: 100%;
+}
+
+.marineBtn {
+    min-height: 120px;
+}
+
+.marineCard {
+    width: 280px;
+}
+
+.marineList div {
+    min-width: 280px;
+}

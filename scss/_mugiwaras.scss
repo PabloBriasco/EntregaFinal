@@ -1,0 +1,25 @@
+// Estilo de la página Mugiwaras
+
+#mugis p span {
+    text-decoration: underline;
+}
+
+.wrapperMugis {
+    margin: $marginWrapper;        
+    max-width: 1236px;   
+    background: $gradienteFondo; 
+    padding: $paddingWrapper;        
+}
+
+.mugiCard {
+    @include textos ($radio20, 0, $colorNegro, $colorBlanco);
+    font-family: $fuenteBasker;       
+    color: $colorBlanco;       
+    border-style: solid;
+    width: 18rem;
+
+    img {
+        border-radius: $radio20;
+        margin: 0;
+    }
+}

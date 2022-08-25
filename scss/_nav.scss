@@ -1,0 +1,88 @@
+// Estilo del Nav
+
+
+.navList {
+    @include textos ($radio10, $margenNav, $backgroundWS, none);
+    height: 100%;
+    align-items: center;      
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    list-style: none;
+    opacity: $opac80;      
+    padding: 0;  
+
+    li {
+        text-align: center;
+        padding: $paddingNavLi;
+        font-weight: $grosor600;
+        font-style: $fuenteItalic;
+        font-family: $fuenteBasker;
+        font-size: $fuenteGrande;
+        border-width: $anchoBorde2;; 
+        margin: 0;
+        transition-duration: 0.5s;
+        border-radius: 20px;   
+        
+        &:hover {
+            background-color: $colorHoverNav;
+            transform: scale(1.2);
+            opacity: $opac100;
+        }
+    }
+}
+
+// Media Queries
+
+@media screen and (max-width: 935px){
+
+    /* modificador del Nav */
+
+    .navList {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .navList {
+        height: auto;
+        margin-left: 12%;
+        margin-right: 11%;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        align-content: center;     
+        
+        li {
+            padding: 5px 10px;
+            font-size: $fuenteGrande;        
+        }
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .navList {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr; 
+    }
+
+    // Display del Nav para páginas que utilicen Bootstrap Grid
+
+    .bootNav {
+        min-width: 280px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 531px) {
+
+    .navList {        
+        grid-template-columns: 1fr 1fr;  
+        grid-template-rows: 1fr 1fr fr;  
+
+        li {
+            font-size: $fuenteMasChica;        
+        }        
+    }  
+}

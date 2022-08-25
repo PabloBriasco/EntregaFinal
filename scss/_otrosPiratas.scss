@@ -1,0 +1,37 @@
+// Estilos de la página "Otros Piratas"
+
+.yonkoIntro {
+    @include textos ($radio20, 4%, #0e75cf, none);    
+    padding: 10px;        
+    color: $colorBlanco;
+}
+
+#yonko2 {
+    @extend .yonkoIntro;    
+    border: $colorNaranja double;    
+
+    div {
+        padding: 5%;
+
+        img {
+            max-width: 100%;
+            border-radius: $radio20;
+        }
+    }
+}
+
+.estiloFlexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+#shichibukai {
+    @extend .yonkoIntro;
+}
+
+.accordion {
+    img {
+        max-width: 260px;
+    }
+}
+

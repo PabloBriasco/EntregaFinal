@@ -1,0 +1,8 @@
+// Estilo del título de cada página
+
+.titulo {  
+    @include textos ($radio20, 4%, $backgroundTitulo, $bordeTitulo);  
+    
+    border-style: groove;
+    opacity: $opac80; 
+}

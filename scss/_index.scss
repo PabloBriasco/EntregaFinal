@@ -1,0 +1,183 @@
+// Estilo de la página "index"
+
+.wrapperIndex {
+        margin: $marginWrapper;        
+        max-width: 1236px;   
+        background: $gradienteFondo; 
+        padding: $paddingWrapper;
+        display: grid;
+        grid-template-areas:
+        "navi header header"
+        "navi header header"
+        "navi header header"
+        "car car car"
+        "car car car"
+        "titulo titulo titulo"
+        "main main aside"
+        "main main aside"
+        "geo geo geo"
+        "frutas frutas frutas"
+        "footer footer footer";
+        gap: $gapWrapper;    
+    }
+
+    // Carousel
+
+    .fuenteCar { 
+        @extend .colorTexto--carrousel;   
+        background-color: $backgroundWS;
+        opacity: $opac90;
+        border-radius: $radio20;
+    }
+
+    .widthCar {
+        width: 100%;
+        max-height: 673px;    
+    }
+
+    // Texto Main
+
+    #sinopsis {
+        @include textos ($radio20, 6% 6%, $backgroundWS, $colorNaranja);          
+        border-style: double;       
+        border-width: $anchoBorde1;        
+    }
+
+    // Aside del Index
+
+    .openings {
+        @extend aside;
+        margin: auto;
+        background-color: black;
+        color: white;
+        text-align: center;
+    }
+
+    //Sección de geografía
+
+    .geo {
+        grid-area: geo;
+        margin-top: 5%;
+        h2 {
+            border-bottom: solid;
+        }
+
+        #oceanos {
+            @include textos ($radio20, 6% 6%, $backgroundWS, $colorNaranja);
+            border-style: inset;
+            padding: 5px;
+            text-align: justify;
+        }
+
+        .blue {
+            border-style: solid;
+            border-color: blue;
+        }
+
+        .north {
+            @extend .blue;
+            max-width: 274px;
+        }
+
+        .east {
+            @extend .blue;                   
+        }
+        span {
+            text-decoration: underline;
+            font-weight: 600;
+        }      
+    }
+
+    .frutas {
+        @extend .geo;
+        grid-area: frutas;
+
+        #frutas {
+            @extend #oceanos;
+        }
+
+        .tipoFruta {
+            @include encabezado (solid, 20px, 20px);            
+        }
+
+        .textoFrutas {
+            text-align: justify;
+        }
+
+        .tablaFrutas {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 900px;
+            overflow-x: auto;
+            border-collapse: collapse;
+            border-style: solid;
+
+            tr {
+                border-style: solid;
+                border-width: 2px;
+
+                td {
+                    border-style: solid;
+                    border-width: 2px;
+                    
+                }
+            }
+        }
+
+    }
+
+    // Media Queries
+
+    @media screen and (max-width: 935px){
+
+        .wrapperIndex {
+            grid-template-areas:
+            "navi header header header"
+            "car car car car"
+            "titulo titulo titulo titulo"            
+            "main main main main"
+            "aside aside aside aside"
+            "geo geo geo geo"
+            "frutas frutas frutas"
+            "footer footer footer footer";
+        }
+    
+        .widthCar {
+            width: 100%;
+            max-height: 400px;    
+        } 
+
+        .east {
+            p {
+                min-width: 300px;
+            }
+
+        }
+    }
+
+    @media screen and (max-width: 630px) {
+
+        .wrapperIndex {
+            grid-template-areas:
+           "header"
+           "navi"
+           "titulo"
+           "main"
+           "geo"   
+           "frutas"    
+           "footer";
+        }
+    }
+
+    @media screen and (max-width: 531px) {
+
+        #sinopsis {
+            margin: 0;       
+        }
+
+        .north {            
+            max-width: none;
+        }
+    }
+
+    

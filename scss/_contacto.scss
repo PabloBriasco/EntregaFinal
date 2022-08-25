@@ -1,0 +1,90 @@
+// Estilos de la página "Contacto"
+
+.wrapperContacto {
+    @extend .wrapperIndex;
+    
+    grid-template-areas:
+    "navi header header"
+    "navi header header"
+    "navi header header"
+    "titulo titulo titulo"
+    "main main aside"
+    "main main aside"
+    "footer footer footer";   
+    
+    aside {        
+        align-items: center;
+
+        p {
+            margin: 0;
+            border-radius: $radio20;
+            background: rgb(2,0,36);
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,32,121,1) 35%, rgba(0,212,255,1) 100%);
+            writing-mode: vertical-lr;
+            text-orientation: upright;
+            width: fit-content;
+            animation-iteration-count: infinite;
+            animation-duration: .5s;
+            animation-name: animacionContacto;
+        }
+    }
+}
+
+#mainContacto {    
+    margin: 0;              
+}
+
+.formulario {
+    background-color: $backgroundWS;
+    border-radius: $radio20;
+    border-style: groove;
+}
+
+// Media Queries
+
+@media screen and (max-width: 935px){
+
+    .wrapperContacto {
+        grid-template-areas:
+        "navi header header"
+        "navi header header"
+        "navi header header"
+        "titulo titulo titulo"
+        "main main main"
+        "aside aside aside"
+        "footer footer footer";
+
+        aside {
+            flex-direction: row; 
+            justify-content: space-evenly;    
+            
+            img {
+                width: 250px;
+            }
+
+            p {        
+                writing-mode:inherit;
+                width:max-content;   
+                background: rgb(2,0,36);
+                background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,32,121,1) 35%, rgba(0,212,255,1) 100%);
+                font-size: $fuente200;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 630px) {
+
+    .wrapperContacto {
+        grid-template-areas:
+       "header"
+       "navi"
+       "titulo"
+       "main"       
+       "footer";
+    }
+}
+
+    
+    
+   

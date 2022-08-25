@@ -1,0 +1,21 @@
+// Estilo del Footer
+
+footer {
+    @include textos ($radio20, none, $backgroundFooter, none);
+    display: flex;
+    align-items: center;
+    width: 100%;    
+
+    p {
+        padding-left: 5px;
+    }
+}
+
+// Footer para página Historia
+
+.footerH {
+    position: absolute;    
+}
+// Se utiliza posición absoluta para dejar el footer al fondo de la página, ya que el contenido de la misma no alcanza a cubrir todo el alto del
+// viewport
+

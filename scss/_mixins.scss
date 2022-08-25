@@ -1,0 +1,17 @@
+@mixin textos ($radio, $margen, $backColor, $bordeColor ) {
+    border-radius: $radio;
+    margin: $margen;
+    background-color: $backColor;
+    border-color: $bordeColor;
+}
+
+@mixin tamanio ($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}
+
+@mixin encabezado ($bordeInf, $margenTop, $margenInf) {
+    border-bottom: $bordeInf;
+    margin-top: $margenTop;
+    margin-bottom: $margenInf;
+}

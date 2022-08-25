@@ -1,0 +1,97 @@
+/* Fuentes de texto */
+
+.fuente1 {
+    font-family: $fuenteBasker;
+    font-size: $fuenteGrande;
+}
+
+.fuente2{
+    font-family: $fuentePlay;
+    font-size: $fuente200;
+    text-align: center;
+}
+
+.fuente3 {
+    font-family: $fuenteBasker;
+    font-size: $fuenteMasChica;
+}
+
+.fuente4 {
+    -webkit-text-stroke: 2px #C78F95;
+    font-family: $fuentePlay;
+    font-size: $fuente600;    
+    text-align: center;
+}
+
+.fuente5 {
+    font-family: $fuenteBasker;
+    font-size: $fuente20;
+    font-weight: $grosor600;    
+}
+
+.fuente6 {
+    font-family: $fuenteBasker;
+    font-size: $fuenteGrande;
+    line-height: 50px;
+    letter-spacing: 1px;
+}
+
+.fuente7{
+    font-family: $fuentePlay;
+    font-size: $fuente200;
+    text-align: center;
+    text-decoration: underline;
+}
+
+// Media Queries
+
+@media screen and (max-width: 768px) {
+
+    .fuente1 {        
+        font-size: medium;
+    }
+    
+    .fuente2{
+        font-size: 100%;
+    }
+
+    .fuente4 {        
+        font-size: 300%;       
+    }
+    
+    .fuente5 {
+        font-size: 15px;
+    }
+    
+    .fuente6 {
+        font-size: medium;
+        line-height: 25px;
+        letter-spacing: 0.5px;
+    }
+    
+    .fuente7{
+        font-size: 100%;
+    }   
+}
+
+@media screen and (max-width: 531px) {
+
+        
+    .fuente4 {        
+        font-size: 300%;       
+    }
+    
+    .fuente5 {
+        font-size: 10px;
+    }
+    
+    .fuente6 {
+        font-size: small;
+        line-height: 15px;
+        letter-spacing: 0.25px;
+    }
+    
+    .fuente7{
+        font-size: 100%;
+    }
+}

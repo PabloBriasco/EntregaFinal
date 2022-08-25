@@ -1,0 +1,40 @@
+// Estilo del Header
+
+#banner {
+    @include tamanio ($anchoBanner, $altoBanner);    
+    animation-duration: $animacTime;
+}
+
+h1 {
+    @extend .colorTexto--nombrePag;
+    @include textos ($radio10, 8%, $fondoNomPag, none);    
+    opacity: $opac90;    
+    
+
+    span {
+        text-emphasis: triangle;
+        text-decoration: solid underline;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    #banner {        
+        height: $altoBanner/2;
+    }    
+
+    h1 {
+        margin: 20px;
+    }
+
+}
+
+@media screen and (max-width: 531px) {
+    #banner {        
+        height: $altoBanner/3;
+    }    
+
+    h1 {
+        margin: 10px;
+    }
+}
